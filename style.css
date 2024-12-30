@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+htnl,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto light';
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.loading {
+    padding: 7vw 11vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgb(17, 17, 17);
+}
+
+.loading-p1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.5vw;
+}
+
+.loading-p1 .number {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.loading-p1 .number h5 {
+    font-size: 3.5vw;
+    font-family: 'Silk Serif';
+    font-weight: 500;
+    width: 6vw;
+}
+
+.loading .line {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.loading .line h2 {
+    font-size: 6vw;
+    line-height: 8vw;
+    margin-left: 30px;
+    animation-name: animate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+
+@keyframes animate {
+    0% {
+        font-family: "plain light";
+        opacity: 1;
+    }
+
+    47% {
+        opacity: 0;
+        font-family: "plain light";
+        -webkit-text-stroke: white 1px;
+        color: transparent;
+    }
+
+    50% {
+        opacity: 1;
+        font-family: "silk serif";
+        -webkit-text-stroke: white 1px;
+        color: transparent;
+    }
+
+    100% {
+        font-family: "silk serif";
+        -webkit-text-stroke: white 1px;
+        color: transparent;
+        opacity: 0;
+    }
+}
+
+
+.loading .line h1 {
+    white-space: nowrap;
+    font-size: 7vw;
+    text-transform: uppercase;
+    line-height: 8vw;
+}
+
+main {
+    background: #000;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background: #cf2626;
+}
